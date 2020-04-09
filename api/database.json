@@ -34,7 +34,7 @@
             "age": 34,
             "computerId": 1,
             "departmentId": 1,
-            "location": 1
+            "locationId": 1
         },
         {
             "id": 2,
@@ -43,7 +43,7 @@
             "age": 24,
             "computerId": 2,
             "departmentId": 1,
-            "location": 2
+            "locationId": 2
         },
         {
             "id": 3,
@@ -52,7 +52,7 @@
             "age": 40,
             "computerId": 3,
             "departmentId": 2,
-            "location": 1
+            "locationId": 1
         },
         {
             "id": 4,
@@ -61,7 +61,7 @@
             "age": 39,
             "computerId": 4,
             "departmentId": 3,
-            "location": 2
+            "locationId": 2
         },
         {
             "id": 5,
@@ -70,7 +70,7 @@
             "age": 50,
             "computerId": 5,
             "departmentId": 4,
-            "location": 2
+            "locationId": 2
         }
     ],
     "departments": [

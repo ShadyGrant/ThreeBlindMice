@@ -6,7 +6,6 @@ export const EmployeeHTML = (employeeObject, computerObject, departmentObject, l
             <div>Current computer: ${computerObject.year} ${computerObject.model}</div>
             <div>Department: ${departmentObject.name}</div>
             <div>Location: ${locationObject.city}</div>
-  
         </section>
     `
 }
