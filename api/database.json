@@ -1,0 +1,105 @@
+{
+    "computers": [
+        {
+            "id": 1,
+            "model": "Macbook Pro",
+            "year": 2015
+        },
+        {
+            "id": 2,
+            "model": "Dell XPS",
+            "year": 2016
+        },
+        {
+            "id": 3,
+            "model": "HP Spectre",
+            "year": 2018
+        },
+        {
+            "id": 4,
+            "model": "ASUS ExpertBook",
+            "year": 2017
+        },
+        {
+            "id": 5,
+            "model": "Microsoft Surface",
+            "year": 2019
+        }
+    ],
+    "employees": [
+        {
+            "id": 1,
+            "firstName": "Rainu",
+            "lastName": "Ittycheriah",
+            "age": 34,
+            "computerId": 1,
+            "departmentId": 1,
+            "location": 1
+        },
+        {
+            "id": 2,
+            "firstName": "Shady",
+            "lastName": "Grant",
+            "age": 24,
+            "computerId": 2,
+            "departmentId": 1,
+            "location": 2
+        },
+        {
+            "id": 3,
+            "firstName": "Andy",
+            "lastName": "Robertson",
+            "age": 40,
+            "computerId": 3,
+            "departmentId": 2,
+            "location": 1
+        },
+        {
+            "id": 4,
+            "firstName": "Mike",
+            "lastName": "Anderson",
+            "age": 39,
+            "computerId": 4,
+            "departmentId": 3,
+            "location": 2
+        },
+        {
+            "id": 5,
+            "firstName": "John",
+            "lastName": "Philips",
+            "age": 50,
+            "computerId": 5,
+            "departmentId": 4,
+            "location": 2
+        }
+    ],
+    "departments": [
+        {
+            "id": 1,
+            "name": "IT"
+        },
+        {
+            "id": 2,
+            "name": "Software Testing"
+        },
+        {
+            "id": 3,
+            "name": "Quality Assurance"
+        },
+        {
+            "id": 4,
+            "name": "HR"
+        }
+    
+    ],
+    "locations":[
+        {
+            "id": 1,
+            "city": "Nashville"   
+        },
+        {
+            "id": 2,
+            "city": "Memphis"   
+        }
+    ]
+}
