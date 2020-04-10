@@ -101,5 +101,75 @@
             "id": 2,
             "city": "Memphis"   
         }
+    ],
+    "customers": [
+        {
+            "id": 1,
+            "name": "Ashley Jones"
+        },
+        {
+            "id": 2,
+            "name": "Justin James"
+        },
+        {
+            "id": 3,
+            "name": "Martin Hanna"
+        },
+        {
+            "id": 4,
+            "name": "John Kenndy"
+        }
+    ],
+    "employeeCustomers": [
+        {
+            "id": 1,
+            "employeeId": 1,
+            "customerId": 1
+        },
+        {
+            "id": 2,
+            "employeeId": 1,
+            "customerId": 2
+        },
+        {
+            "id": 3,
+            "employeeId": 2,
+            "customerId": 3
+        },
+        {
+            "id": 4,
+            "employeeId": 2,
+            "customerId": 4
+        },
+        {
+            "id": 5,
+            "employeeId": 3,
+            "customerId": 1
+        },
+        {
+            "id": 6,
+            "employeeId": 3,
+            "customerId": 3
+        },
+        {
+            "id": 7,
+            "employeeId": 4,
+            "customerId": 2
+        },
+        {
+            "id": 8,
+            "employeeId": 4,
+            "customerId": 4
+        },
+        {
+            "id": 9,
+            "employeeId": 5,
+            "customerId": 1
+        },
+        {
+            "id": 10,
+            "employeeId": 5,
+            "customerId": 4
+        }
     ]
 }

@@ -3,6 +3,10 @@ import { useEmployees } from "./EmployeeDataProvider.js"
 import { useDepartments } from "../departments/DepartmentProvider.js";
 import { useLocations } from "../locations/LocationProvider.js";
 import { EmployeeHTML } from "./Employee.js";
+import { useCustomers } from "../customers/CustomerProvider.js";
+import { useEmployeeCustomers } from "../employeeCustomers/EmployeeCustomerProvider.js";
+
+
 
 
 const contentTarget = document.querySelector(".container")
@@ -11,6 +15,9 @@ const render = employeesToRender => {
     const computers = useComputers()
     const departments = useDepartments()
     const locations = useLocations()
+    const employeeCustomers = useEmployeeCustomers()
+    const customers = useCustomers()
+
 
     contentTarget.innerHTML = employeesToRender.map(
         (employeeObject) => {
@@ -30,7 +37,22 @@ const render = employeesToRender => {
                     return location.id === employeeObject.locationId
                 }
             )
-            return EmployeeHTML(employeeObject, foundComputer, foundDepartment, foundLocation)
+            // Get all customer relationships for the current employee
+            const EmployeesCustomerRelationships = employeeCustomers.filter(
+                empCustRel => {
+                    return employeeObject.id === empCustRel.employeeId
+                }
+            )
+
+            // For each relationship, convert to corresponding customer object
+            const theMatchingCustomers = EmployeesCustomerRelationships.map(
+                rel => {
+                    const customer = customers.find(
+                        cust => rel.customerId === cust.id)
+                    return customer
+                }
+            )
+            return EmployeeHTML(employeeObject, foundComputer, foundDepartment, foundLocation, theMatchingCustomers)
         }
     ).join("")
 }
